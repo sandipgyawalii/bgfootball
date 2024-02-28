@@ -31,6 +31,13 @@ Route::get('/blog',HomeController::class.'@blog')->name('blog');
 
 Route::group(['prefix' => 'admin', ['middleware' => 'authadmin']], function () {
     Route::get('/dashboard',DashboardController::class.'@index')->name('dashboard');
+
+    Route::group(['prefix' =>'profile'],function(){
+
+        Route::get('/index',App\Http\Controllers\admin\ProfileController::class.'@index')->name('profile_index');
+        Route::get('/edit/{id}',App\Http\Controllers\admin\ProfileController::class.'@edit')->name('profile_edit');
+        Route::PUT('/update/{id}',App\Http\Controllers\admin\ProfileController::class.'@update')->name('profile_update');
+    });
 });
 
 Auth::routes();

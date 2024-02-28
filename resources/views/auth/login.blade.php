@@ -35,7 +35,7 @@
                                     @csrf
                                     <div class="form">
                                         <input name="email" type="text" class="form-control" id="username"
-                                            placeholder="Username or email address*" required  />
+                                            placeholder="Username or email address*" autofocus required  />
                                             @error('email')
                                                 <span class="text-danger fs-6">{{ $message }}</span>
                                             @enderror

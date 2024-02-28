@@ -9,7 +9,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        dd('Welcome to dashbpard');
-        return view('admin.dashboard');
+        return view('admin.components.dashboard');
     }
 }
