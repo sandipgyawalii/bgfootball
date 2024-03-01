@@ -42,9 +42,8 @@
 
 <script src="{{asset('assets/admin/js/feather.min.js')}}"></script>
 
-{{-- <script src="{{asset('assets/admin/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
-
-<script src="{{asset('assets/admin/plugins/apexchart/apexcharts.min.js')}}"></script> --}}
+<script src="{{asset('assets/admin/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script> 
+{{-- {{ --  <script src="{{asset('assets/admin/plugins/apexchart/apexcharts.min.js')}}"></script> --}} a
 <script src="https://cdn.ckeditor.com/4.17.2/full/ckeditor.js"></script>
 <script src="{{ asset('assets/admin/plugins/datatables/datatables.min.js') }}"></script>
 <script src="{{asset('assets/admin/js/script.js')}}"></script>

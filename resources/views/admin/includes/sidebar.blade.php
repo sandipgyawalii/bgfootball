@@ -17,49 +17,33 @@
                     <a href="{{ route('profile_index') }}"><i class="fas fa-file-invoice-dollar"></i> <span> Profile Settings</span> </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Home Image</span> </a>
+                    <a href="{{ route('homeslider.index') }}"><i class="fas fa-file-invoice-dollar"></i> <span> Home Image</span> </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Our Services</span> </a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Why Choose us </span> </a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Our Partners</span> </a>
+                    <a href="{{ route('sponsor.index') }}"><i class="fas fa-file-invoice-dollar"></i> <span> Sponsor</span> </a>
                 </li>
                 <li class="submenu">
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span> About us </span> <span
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="#">Testimonial</a> </li>
-                        <li><a href="#">Our Team</a> </li>
-                        {{-- <li><a href="{{ route('home_ourservice') }}">Our Service</a></li>
-                        <li><a href="{{ route('home_airport') }}">Airport Served</a></li>
-                        <li><a href="{{ route('home_guest') }}">Valued Guest</a></li>
-                        <li><a href="{{ route('home_review') }}">Review</a></li>
-                        <li><a href="{{ route('home_partner') }}">Partner Organization</a></li> --}}
-
+                        <li><a href="{{ route('partner.index') }}">Our Team</a> </li>
+                        <li><a href="{{route('about.index')}}">Page</a> </li>
                     </ul>
                 </li>
 
-
-
-                <li class="submenu">
-                    <a href="#"><i class="fas fa-graduation-cap"></i> <span>Study Abroad</span><span
-                            class="menu-arrow"></span></a>
-                    <ul>
-                        <li><a href="#">Country</a></li>
-                        <li><a href="#">Language Class</a></li>
-                    </ul>
+                <li>
+                    <a href="{{ route('facilities.index') }}"><i class="fas fa-file-invoice-dollar"></i> <span> Facilites</span> </a>
                 </li>
+
+
 
                 <li class="submenu">
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span>Gallery</span><span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="#">Gallery Category</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a href="{{ route('gallerycategory.index') }}">Gallery Category</a></li>
+                        <li><a href="{{ route('gallery.index') }}">Gallery</a></li>
                     </ul>
                 </li>
 

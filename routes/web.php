@@ -38,6 +38,19 @@ Route::group(['prefix' => 'admin', ['middleware' => 'authadmin']], function () {
         Route::get('/edit/{id}',App\Http\Controllers\admin\ProfileController::class.'@edit')->name('profile_edit');
         Route::PUT('/update/{id}',App\Http\Controllers\admin\ProfileController::class.'@update')->name('profile_update');
     });
+
+
+    Route::resource('homeslider', App\Http\Controllers\admin\HomesliderController::class);
+    Route::resource('sponsor', App\Http\Controllers\admin\SponsorController::class);
+    Route::resource('about', App\Http\Controllers\admin\AboutController::class);
+    Route::delete('/delete/image/{id}',App\Http\Controllers\admin\AboutController::class.'@imagedelete')->name('about.imagedestroy');
+    Route::resource('partner', App\Http\Controllers\admin\PartnerController::class);
+    Route::resource('gallerycategory', App\Http\Controllers\admin\GallerycategoryController::class);
+    Route::resource('gallery', App\Http\Controllers\admin\GalleryController::class);
+    Route::resource('facilities', App\Http\Controllers\admin\FacilityController::class);
+
+
+
 });
 
 Auth::routes();
